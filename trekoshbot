@@ -1,0 +1,33 @@
+const Discord = require('discord.js');
+
+const client = new Discord.Client();
+
+const prefix = '.';
+
+client.once('ready' ,  () => {
+    clonsole.once('TrekoshBot is online!');
+});
+
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+
+    if(command === 'ping'){
+        message.channel.send('pong');
+    }   else if (command == 'youtube'){
+        message.channel.send('https://www.youtube.com/channel/UCiEgns8zmm2XLX1Mf3YZg2w');
+    }   else if (command == 'twitch'){
+        message.channel.send('https://www.twitch.tv/yeet_rad3on123');
+    }   else if (command == 'anyád'){
+        message.channel.send('Büdös');
+    }   else if (command == 'room'){
+        bot.createChannel(server,name);
+    }
+}); 
+
+
+
+
+client.login(process.env.NzU3NjU2MTkyNzAwMTIxMTU5.X2jkUA.Pr7BcC_laJzlcJUF8v_kcyftKUM);
