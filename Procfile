@@ -1,1 +1,1 @@
-worker: node Trekhos.js
+worker: node main.js
